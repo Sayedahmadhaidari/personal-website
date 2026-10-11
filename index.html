@@ -1,0 +1,719 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Personal portfolio of a Computer Engineering student interested in web development and software."
+    />
+
+    <meta name="theme-color" content="#f8fafc" />
+
+    <title>Sayed Ahmad Haidari | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .hero-gradient {
+        background:
+          radial-gradient(
+            circle at 85% 20%,
+            rgba(96, 165, 250, 0.2),
+            transparent 35%
+          ),
+          linear-gradient(135deg, #eff6ff, #f8fafc 60%);
+      }
+
+      .section-label {
+        letter-spacing: 0.14em;
+      }
+
+      .project-card {
+        transition:
+          transform 0.25s ease,
+          box-shadow 0.25s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 35px rgba(15, 23, 42, 0.09);
+      }
+
+      .focus-ring:focus-visible {
+        outline: 3px solid #60a5fa;
+        outline-offset: 4px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-slate-50 text-slate-800 antialiased">
+    <!-- ==================== HEADER ==================== -->
+    <header
+      class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur"
+    >
+      <nav
+        class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-5 py-4 lg:px-10"
+        aria-label="Main navigation"
+      >
+        <a
+          href="#home"
+          class="focus-ring text-lg font-extrabold tracking-tight text-slate-900"
+        >
+          SAH<span class="text-blue-600">.</span>
+        </a>
+
+        <div
+          class="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm font-medium text-slate-600 sm:gap-x-7"
+        >
+          <a class="focus-ring transition hover:text-blue-600" href="#about">
+            About
+          </a>
+
+          <a class="focus-ring transition hover:text-blue-600" href="#skills">
+            Skills
+          </a>
+
+          <a class="focus-ring transition hover:text-blue-600" href="#projects">
+            Projects
+          </a>
+
+          <a
+            class="focus-ring rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white transition hover:bg-blue-700"
+            href="#contact"
+          >
+            Contact
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ==================== HERO ==================== -->
+      <section id="home" class="hero-gradient">
+        <div
+          class="mx-auto grid max-w-7xl items-center gap-12 px-5 py-16 sm:py-20 lg:grid-cols-2 lg:gap-16 lg:px-10 lg:py-28"
+        >
+          <div>
+            <p
+              class="section-label mb-5 text-xs font-bold uppercase text-blue-700"
+            >
+              Personal Portfolio
+            </p>
+
+            <h1
+              class="max-w-2xl text-4xl font-extrabold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl"
+            >
+              Hello, I'm
+              <span class="text-blue-600">Sayed Ahmad Haidari.</span>
+            </h1>
+
+            <p class="mt-5 text-lg font-semibold text-slate-700 sm:text-xl">
+              Computer Engineering Student &amp; Aspiring Web Developer
+            </p>
+
+            <p class="mt-5 max-w-xl text-base leading-8 text-slate-600">
+              I enjoy learning how websites work and turning ideas into useful
+              digital experiences. I am building my skills in web development,
+              programming, and software engineering one project at a time.
+            </p>
+
+            <div class="mt-8 flex flex-wrap gap-3">
+              <a
+                href="#projects"
+                class="focus-ring inline-flex items-center justify-center rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-600/20 transition hover:bg-blue-700"
+              >
+                View My Projects
+              </a>
+
+              <a
+                href="#about"
+                class="focus-ring inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 font-semibold text-slate-700 transition hover:border-blue-400 hover:text-blue-700"
+              >
+                Learn About Me
+              </a>
+            </div>
+
+            <div
+              class="mt-8 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-slate-500"
+            >
+              <span class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-green-500"></span>
+                Always learning
+              </span>
+
+              <span>Based in Iran</span>
+            </div>
+          </div>
+
+          <!-- Profile image area -->
+          <div class="mx-auto w-full max-w-md">
+            <div
+              class="relative rounded-3xl border border-white bg-white p-3 shadow-2xl shadow-slate-900/10"
+            >
+              <div
+                class="absolute -right-4 -top-4 h-24 w-24 rounded-full bg-blue-200/70 blur-2xl"
+              ></div>
+
+              <div
+                class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-100 via-slate-100 to-indigo-100"
+              >
+                <!--
+                Later, add your photo to:
+                images/profile.jpg
+
+                If the image is missing, the initials below will appear.
+              -->
+
+                <img
+                  src="images/profile.jpg"
+                  alt="Portrait of Sayed Ahmad Haidari"
+                  class="aspect-[4/5] w-full object-cover"
+                  onerror="
+                    this.style.display = 'none';
+                    this.nextElementSibling.style.display = 'grid';
+                  "
+                />
+
+                <div
+                  class="hidden aspect-[4/5] place-items-center"
+                  aria-label="Profile image placeholder"
+                >
+                  <div class="text-center">
+                    <div
+                      class="mx-auto grid h-32 w-32 place-items-center rounded-full border-4 border-white bg-blue-600 text-4xl font-extrabold text-white shadow-xl"
+                    >
+                      SAH
+                    </div>
+
+                    <p class="mt-5 font-semibold text-slate-700">
+                      Your Photo Here
+                    </p>
+
+                    <p class="mt-1 text-sm text-slate-500">
+                      Add your profile image later
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="relative flex items-center justify-between gap-4 px-3 py-4"
+              >
+                <div>
+                  <p class="font-bold text-slate-900">Sayed Ahmad Haidari</p>
+
+                  <p class="mt-1 text-sm text-slate-500">Student Developer</p>
+                </div>
+
+                <span
+                  class="rounded-full bg-blue-50 px-3 py-1.5 text-xs font-semibold text-blue-700"
+                >
+                  Portfolio
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT ==================== -->
+      <section id="about" class="scroll-mt-24 px-5 py-20 lg:px-10 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12">
+            <p class="section-label text-xs font-bold uppercase text-blue-700">
+              Get to know me
+            </p>
+
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl"
+            >
+              About Me
+            </h2>
+
+            <p class="mt-4 max-w-2xl leading-8 text-slate-600">
+              A little introduction to my education, interests, and goals.
+            </p>
+          </div>
+
+          <div class="grid gap-8 lg:grid-cols-5 lg:gap-12">
+            <div class="space-y-5 leading-8 text-slate-600 lg:col-span-3">
+              <p>
+                I am a Computer Engineering student interested in technology,
+                problem-solving, and building websites that are simple,
+                accessible, and easy to use.
+              </p>
+
+              <p>
+                I am currently developing my programming knowledge and
+                practicing HTML, CSS, and JavaScript through small projects and
+                coursework.
+              </p>
+
+              <p>
+                My goal is to become a skilled developer who can create
+                practical web applications and continue learning new
+                technologies throughout my career.
+              </p>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-1">
+              <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm font-semibold text-blue-700">Education</p>
+
+                <h3 class="mt-2 font-bold text-slate-900">
+                  Computer Engineering
+                </h3>
+
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Undergraduate student at Qom University of Technology.
+                </p>
+              </div>
+
+              <div class="rounded-2xl border border-slate-200 bg-white p-6">
+                <p class="text-sm font-semibold text-blue-700">Current Focus</p>
+
+                <h3 class="mt-2 font-bold text-slate-900">
+                  Front-End Development
+                </h3>
+
+                <p class="mt-2 text-sm leading-6 text-slate-600">
+                  Practicing responsive layouts, JavaScript, and user-friendly
+                  interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SKILLS ==================== -->
+      <section
+        id="skills"
+        class="scroll-mt-24 border-y border-slate-200 bg-white px-5 py-20 lg:px-10 lg:py-24"
+      >
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12">
+            <p class="section-label text-xs font-bold uppercase text-blue-700">
+              What I am learning
+            </p>
+
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl"
+            >
+              Skills &amp; Technologies
+            </h2>
+
+            <p class="mt-4 max-w-2xl leading-8 text-slate-600">
+              The tools and technologies I am practicing as I develop my
+              programming skills.
+            </p>
+          </div>
+
+          <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <article
+              class="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-300"
+            >
+              <div
+                class="grid h-12 w-12 place-items-center rounded-xl bg-orange-100 font-extrabold text-orange-700"
+              >
+                01
+              </div>
+
+              <h3 class="mt-5 text-lg font-bold text-slate-900">HTML</h3>
+
+              <p class="mt-2 text-sm leading-7 text-slate-600">
+                Creating structured web pages with semantic HTML elements.
+              </p>
+            </article>
+
+            <article
+              class="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-300"
+            >
+              <div
+                class="grid h-12 w-12 place-items-center rounded-xl bg-blue-100 font-extrabold text-blue-700"
+              >
+                02
+              </div>
+
+              <h3 class="mt-5 text-lg font-bold text-slate-900">
+                CSS &amp; Tailwind
+              </h3>
+
+              <p class="mt-2 text-sm leading-7 text-slate-600">
+                Styling layouts, choosing colors, and making pages responsive.
+              </p>
+            </article>
+
+            <article
+              class="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-300"
+            >
+              <div
+                class="grid h-12 w-12 place-items-center rounded-xl bg-yellow-100 font-extrabold text-yellow-700"
+              >
+                03
+              </div>
+
+              <h3 class="mt-5 text-lg font-bold text-slate-900">JavaScript</h3>
+
+              <p class="mt-2 text-sm leading-7 text-slate-600">
+                Learning variables, functions, arrays, objects, and DOM
+                interactions.
+              </p>
+            </article>
+
+            <article
+              class="rounded-2xl border border-slate-200 bg-slate-50 p-6 transition hover:border-blue-300"
+            >
+              <div
+                class="grid h-12 w-12 place-items-center rounded-xl bg-purple-100 font-extrabold text-purple-700"
+              >
+                04
+              </div>
+
+              <h3 class="mt-5 text-lg font-bold text-slate-900">
+                Git &amp; GitHub
+              </h3>
+
+              <p class="mt-2 text-sm leading-7 text-slate-600">
+                Practicing version control, repositories, and website
+                publishing.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROJECTS ==================== -->
+      <section id="projects" class="scroll-mt-24 px-5 py-20 lg:px-10 lg:py-24">
+        <div class="mx-auto max-w-7xl">
+          <div class="mb-12">
+            <p class="section-label text-xs font-bold uppercase text-blue-700">
+              Learning by building
+            </p>
+
+            <h2
+              class="mt-3 text-3xl font-extrabold tracking-tight text-slate-950 sm:text-4xl"
+            >
+              Featured Projects
+            </h2>
+
+            <p class="mt-4 max-w-2xl leading-8 text-slate-600">
+              A selection of practice projects that help me improve my
+              development skills.
+            </p>
+          </div>
+
+          <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <!-- Project 1 -->
+            <article
+              class="project-card min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white"
+            >
+              <div
+                class="grid h-44 place-items-center bg-gradient-to-br from-blue-100 to-indigo-200"
+              >
+                <div
+                  class="rounded-2xl border border-white/80 bg-white/80 p-5 text-center shadow-lg"
+                >
+                  <p class="text-3xl font-extrabold text-blue-700">24°</p>
+
+                  <p class="mt-1 text-sm font-medium text-slate-600">
+                    Weather App
+                  </p>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <p
+                  class="text-xs font-bold uppercase tracking-wider text-blue-700"
+                >
+                  Web Application
+                </p>
+
+                <h3 class="mt-3 text-xl font-bold text-slate-900">
+                  Weather App
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  A weather application project using the Open-Meteo API, with
+                  language options for Persian and English.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    HTML
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    CSS
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Sayedahmadhaidari"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="focus-ring mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                >
+                  Explore on GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article
+              class="project-card min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white"
+            >
+              <div
+                class="grid h-44 place-items-center bg-gradient-to-br from-violet-100 to-purple-200"
+              >
+                <div
+                  class="w-52 rounded-xl border border-white/80 bg-white/90 p-4 shadow-lg"
+                >
+                  <div class="h-2 w-20 rounded-full bg-purple-200"></div>
+
+                  <div class="mt-4 flex items-center gap-3">
+                    <div
+                      class="grid h-10 w-10 place-items-center rounded-full bg-purple-100 font-bold text-purple-700"
+                    >
+                      S
+                    </div>
+
+                    <div class="flex-1">
+                      <div class="h-2 w-24 rounded-full bg-slate-200"></div>
+                      <div
+                        class="mt-2 h-2 w-16 rounded-full bg-slate-100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <p
+                  class="text-xs font-bold uppercase tracking-wider text-purple-700"
+                >
+                  JavaScript Practice
+                </p>
+
+                <h3 class="mt-3 text-xl font-bold text-slate-900">
+                  Student Data Card
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  A student information card that practices JavaScript objects
+                  and JSON data conversion.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    JavaScript
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    JSON
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    HTML
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Sayedahmadhaidari"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="focus-ring mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                >
+                  Explore on GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article
+              class="project-card min-w-0 overflow-hidden rounded-2xl border border-slate-200 bg-white"
+            >
+              <div
+                class="grid h-44 place-items-center bg-gradient-to-br from-emerald-100 to-teal-200"
+              >
+                <div
+                  class="w-52 rounded-xl border border-white/80 bg-white/90 p-4 shadow-lg"
+                >
+                  <p class="text-sm font-bold text-slate-800">Feedback Wall</p>
+
+                  <div class="mt-3 rounded-lg bg-emerald-50 p-3">
+                    <div class="h-2 w-28 rounded-full bg-emerald-200"></div>
+                    <div
+                      class="mt-2 h-2 w-20 rounded-full bg-emerald-100"
+                    ></div>
+                  </div>
+
+                  <div class="mt-2 rounded-lg bg-slate-100 p-3">
+                    <div class="h-2 w-24 rounded-full bg-slate-200"></div>
+                    <div class="mt-2 h-2 w-16 rounded-full bg-slate-100"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-6">
+                <p
+                  class="text-xs font-bold uppercase tracking-wider text-emerald-700"
+                >
+                  Interactive Website
+                </p>
+
+                <h3 class="mt-3 text-xl font-bold text-slate-900">
+                  Feedback Wall
+                </h3>
+
+                <p class="mt-3 text-sm leading-7 text-slate-600">
+                  A practice project focused on displaying feedback and
+                  improving JavaScript interaction skills.
+                </p>
+
+                <div class="mt-5 flex flex-wrap gap-2">
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    HTML
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    Tailwind CSS
+                  </span>
+
+                  <span
+                    class="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600"
+                  >
+                    JavaScript
+                  </span>
+                </div>
+
+                <a
+                  href="https://github.com/Sayedahmadhaidari"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="focus-ring mt-6 inline-flex items-center gap-2 text-sm font-semibold text-blue-700 hover:text-blue-900"
+                >
+                  Explore on GitHub
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section
+        id="contact"
+        class="scroll-mt-24 border-t border-slate-200 bg-white px-5 py-20 lg:px-10 lg:py-24"
+      >
+        <div class="mx-auto max-w-4xl">
+          <div
+            class="rounded-3xl bg-slate-900 px-6 py-12 text-center sm:px-12 sm:py-16"
+          >
+            <p class="section-label text-xs font-bold uppercase text-blue-300">
+              Let's connect
+            </p>
+
+            <h2
+              class="mt-4 text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+            >
+              Contact Me
+            </h2>
+
+            <p class="mx-auto mt-5 max-w-xl leading-8 text-slate-300">
+              I am interested in learning, collaborating, and connecting with
+              people who enjoy technology and web development.
+            </p>
+
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+              <a
+                href="https://github.com/Sayedahmadhaidari"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="focus-ring inline-flex items-center justify-center rounded-xl bg-white px-6 py-3 font-semibold text-slate-900 transition hover:bg-blue-50"
+              >
+                Visit My GitHub</a
+              >
+
+              <!-- Replace this placeholder with your real email address -->
+              <a
+                href="mailto:your-email@example.com"
+                class="focus-ring inline-flex items-center justify-center rounded-xl border border-slate-600 px-6 py-3 font-semibold text-white transition hover:border-blue-300 hover:bg-slate-800"
+              >
+                Send Me an Email
+              </a>
+            </div>
+
+            <p class="mt-5 text-xs leading-6 text-slate-400">
+              Note: Replace the example email with your real email address.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="border-t border-slate-200 bg-slate-50 px-5 py-7">
+      <div
+        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-center sm:flex-row sm:text-left lg:px-10"
+      >
+        <p class="text-sm text-slate-600">
+          © <span id="current-year"></span> Sayed Ahmad Haidari
+        </p>
+
+        <a
+          href="#home"
+          class="focus-ring text-sm font-semibold text-blue-700 hover:text-blue-900"
+        >
+          Back to top ↑
+        </a>
+      </div>
+    </footer>
+
+    <!-- ==================== JAVASCRIPT ==================== -->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
+</html>
